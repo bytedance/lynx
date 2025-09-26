@@ -2,12 +2,12 @@
 
 # Lynx: Towards High-Fidelity Personalized Video Generation
 
-<h5 style="font-size: 1.1em; letter-spacing: 0.5px;">
-  <a href="https://ssangx.github.io/" style="margin-right: 40px;">Shen Sang*</a>
-  <a href="https://tiancheng-zhi.github.io/" style="margin-right: 40px;">Tiancheng Zhi*</a>
-  <a href="https://gutianpei.github.io/" style="margin-right: 40px;">Tianpei Gu</a>
-  <a href="https://www.jingliu.net/" style="margin-right: 40px;">Jing Liu</a>
-  <a href="https://linjieluo.github.io/">Linjie Luo</a>
+<h5 style="font-size:1.1em; letter-spacing:0.5px;">
+<a href="https://ssangx.github.io/">Shen Sang*</a>&nbsp;&nbsp;&nbsp;
+<a href="https://tiancheng-zhi.github.io/">Tiancheng Zhi*</a>&nbsp;&nbsp;&nbsp;
+<a href="https://gutianpei.github.io/">Tianpei Gu</a>&nbsp;&nbsp;&nbsp;
+<a href="https://www.jingliu.net/">Jing Liu</a>&nbsp;&nbsp;&nbsp;
+<a href="https://linjieluo.github.io/">Linjie Luo</a>
 </h5>
 
 <p style="font-size: 1.05em; margin: 8px 0;">
