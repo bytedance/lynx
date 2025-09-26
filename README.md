@@ -69,7 +69,7 @@ python infer.py --subject_image demo/subjects/demo_subject.png --prompt demo/pro
 
 ## Lite Model
 
-Lightweight model with fewer parameters, tailored for efficient 24fps (121-frame) video generation.
+Lightweight model with fewer parameters (no Ref-adapter), tailored for efficient 24fps (121-frame) video generation.
 ### Usage
 
 **Run a simple single-GPU inference:**
