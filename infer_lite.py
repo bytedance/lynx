@@ -82,7 +82,6 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--num_inference_steps", type=int, default=50)
     parser.add_argument("--guidance_scale", type=float, default=5.0)
-    parser.add_argument("--guidance_scale_i", type=float, default=2.0)
     parser.add_argument("--ip_scale", type=float, default=1.0)
 
     # Runtime
@@ -170,7 +169,6 @@ def main():
         num_frames=args.num_frames,
         num_inference_steps=args.num_inference_steps,
         guidance_scale=args.guidance_scale,
-        guidance_scale_i=args.guidance_scale_i,
         ip_scale=args.ip_scale,
         seed=args.seed,
     )

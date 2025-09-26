@@ -10,6 +10,7 @@
 <a href="https://linjieluo.github.io/">Linjie Luo</a>
 </h5>
 
+
 <p style="font-size: 1.05em; margin: 8px 0;">
 Intelligent Creation, ByteDance
 </p>
@@ -68,8 +69,7 @@ python infer.py --subject_image demo/subjects/demo_subject.png --prompt demo/pro
 
 ## Lite Model
 
-Lightweight version optimized for resource-constrained environments, with 24 fps video support.
-
+Lightweight model with fewer parameters, tailored for efficient 24fps (121-frame) video generation.
 ### Usage
 
 **Run a simple single-GPU inference:**
@@ -100,9 +100,9 @@ limitations under the License.
 If you find this code useful for your research, please cite us via the BibTeX below.
 ```BibTeX
 @article{sang2025lynx,
-  title        = {Lynx: Towards High-Fidelity Personalized Video Generation},
-  author       = {Sang, Shen and Zhi, Tiancheng and Gu, Tianpei and Liu, Jing and Luo, Linjie},
-  journal      = {arXiv preprint arXiv:2509.15496},
-  year         = {2025}
+  title    = {Lynx: Towards High-Fidelity Personalized Video Generation},
+  author   = {Sang, Shen and Zhi, Tiancheng and Gu, Tianpei and Liu, Jing and Luo, Linjie},
+  journal  = {arXiv preprint arXiv:2509.15496},
+  year     = {2025}
 }
 ```
