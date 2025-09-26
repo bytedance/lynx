@@ -3,6 +3,7 @@
 
 import os
 import argparse
+import sys
 
 import torch
 import numpy as np
@@ -144,15 +145,34 @@ def build_style_info(args: argparse.Namespace) -> VideoStyleInfo:
         negative_prompt=args.negative_prompt,
     )
 
-
 def main():
     args = parse_args()
 
-    # Prepare subject/style
+    # ACTUAL START OF PATH VALIDATION
+    print("Validating input paths...")
+    
+    # 1. This will Validate Subject Image
+    if not os.path.isfile(args.subject_image):
+        print(f"Error: Subject image file not found at '{args.subject_image}'")
+        sys.exit(1)
+
+    # 2. This willl Validate Base Model Directory
+    if not os.path.isdir(args.base_model_path):
+        print(f"Error: Base model directory not found at '{args.base_model_path}'")
+        sys.exit(1)
+
+    # 3. This will Validate Adapter Directory
+    if not os.path.isdir(args.adapter_path):
+        print(f"Error: Adapter directory not found at '{args.adapter_path}'")
+        sys.exit(1)
+
+    print("Paths validated successfully.")
+    # --- END OF PATH VALIDATION ---
+    
+
     subject = build_subject_info(args.subject_image, args.device)
     style = build_style_info(args)
 
-    # Init pipeline
     infer = LynxWanInfer(
         adapter_path=args.adapter_path,
         base_model_path=args.base_model_path,
